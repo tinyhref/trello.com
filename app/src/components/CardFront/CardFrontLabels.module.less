@@ -1,0 +1,34 @@
+// Imports
+import ___CSS_LOADER_API_NO_SOURCEMAP_IMPORT___ from "../../../../node_modules/css-loader/dist/runtime/noSourceMaps.js";
+import ___CSS_LOADER_API_IMPORT___ from "../../../../node_modules/css-loader/dist/runtime/api.js";
+var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_NO_SOURCEMAP_IMPORT___);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.VMMjsobBgbdDwm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+.ldCxUdFqeU7qAn {
+  display: inline-flex;
+  max-width: calc(100% - 4px);
+}
+/**
+ * This is a bit magical: five collapsed labels can fit on a single row in the
+ * card front. We added additional vertical margins to each collapsed label to
+ * improve the smoothness of the expansion animation, but we don't want to break
+ * the layout for multi-row label layouts. This selector targets all labels,
+ * starting from the 6th label, to remove their margins. It makes the animations
+ * slightly more jilted for cards with multiple rows of labels, but is preferred
+ * for the static state.
+ */
+.ldCxUdFqeU7qAn:nth-child(n + 6) > .PQu0QAd311EPJt[data-expanded='false'] {
+  margin-top: var(--ds-space-0, 0);
+  margin-bottom: var(--ds-space-0, 0);
+}
+`, ""]);
+// Exports
+export var labels = `VMMjsobBgbdDwm`;
+export var labelWrapper = `ldCxUdFqeU7qAn`;
+export var label = `PQu0QAd311EPJt`;
+export default ___CSS_LOADER_EXPORT___;

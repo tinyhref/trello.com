@@ -1,0 +1,30 @@
+// Imports
+import ___CSS_LOADER_API_NO_SOURCEMAP_IMPORT___ from "../../node_modules/css-loader/dist/runtime/noSourceMaps.js";
+import ___CSS_LOADER_API_IMPORT___ from "../../node_modules/css-loader/dist/runtime/api.js";
+var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_NO_SOURCEMAP_IMPORT___);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `/**
+ * This file is dedicated to Trello-specific custom tokens that don't have an
+ * appropriate equivalent in the Atlassian Design System today. They are meant
+ * to be transient, and not long-lived.
+ *
+ * Each token must have an equivalent in \`tokens.ts\` as well.
+ *
+ * If you think you have a need for a custom token, communicate the need in
+ * [#trello-ads-colors-migration](https://atlassian.slack.com/archives/C040YCMFJDA).
+ *
+ * NOTE: This file does *not* need to be imported in order to access tokens!
+ * They are applied to the HTML root directly, and can be used from anywhere.
+ */
+html {
+  --tr-background-list: #f1f2f4;
+  --tr-icon-star: #e2b203;
+}
+html[data-color-mode='dark']  {
+  --tr-background-list: #101204;
+  --tr-icon-star: #e2b203;
+}
+`, ""]);
+// Exports
+___CSS_LOADER_EXPORT___.locals = {};
+export default ___CSS_LOADER_EXPORT___;

@@ -1,0 +1,36 @@
+import { modelFactory } from 'app/scripts/db/modelFactory';
+import { Action } from 'app/scripts/models/Action';
+import { Board } from 'app/scripts/models/Board';
+import { BoardPlugin } from 'app/scripts/models/BoardPlugin';
+import { Card } from 'app/scripts/models/Card';
+import { Checklist } from 'app/scripts/models/Checklist';
+import { CustomField } from 'app/scripts/models/CustomField';
+import { CustomFieldItem } from 'app/scripts/models/CustomFieldItem';
+import { Enterprise } from 'app/scripts/models/Enterprise';
+import { Label } from 'app/scripts/models/Label';
+import { List } from 'app/scripts/models/List';
+import { Member } from 'app/scripts/models/Member';
+import { Organization } from 'app/scripts/models/Organization';
+import { PendingOrganization } from 'app/scripts/models/PendingOrganization';
+import { Plugin } from 'app/scripts/models/Plugin';
+import { PluginData } from 'app/scripts/models/PluginData';
+import { Reaction } from 'app/scripts/models/Reaction';
+
+export const initializeModelFactory = () => {
+  modelFactory.registerModelClass('Action', Action);
+  modelFactory.registerModelClass('Board', Board);
+  modelFactory.registerModelClass('BoardPlugin', BoardPlugin);
+  modelFactory.registerModelClass('Card', Card);
+  modelFactory.registerModelClass('Checklist', Checklist);
+  modelFactory.registerModelClass('CustomField', CustomField);
+  modelFactory.registerModelClass('CustomFieldItem', CustomFieldItem);
+  modelFactory.registerModelClass('Enterprise', Enterprise);
+  modelFactory.registerModelClass('Label', Label);
+  modelFactory.registerModelClass('List', List);
+  modelFactory.registerModelClass('Member', Member);
+  modelFactory.registerModelClass('Organization', Organization);
+  modelFactory.registerModelClass('PendingOrganization', PendingOrganization);
+  modelFactory.registerModelClass('Plugin', Plugin);
+  modelFactory.registerModelClass('PluginData', PluginData);
+  modelFactory.registerModelClass('Reaction', Reaction);
+};

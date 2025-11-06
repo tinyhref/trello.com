@@ -1,0 +1,25 @@
+export function Box() {
+  return (
+    <svg
+      width="65"
+      height="65"
+      viewBox="0 0 65 65"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        opacity="0.5"
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M16.4619 33.8066H49.394V55.5542H16.4619V33.8066Z"
+        fill="currentColor"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M8.38404 0.875H29.1994V14.8557H36.6557V0.875H57.4714C61.5894 0.875 64.9277 4.2133 64.9277 8.33131V57.4187C64.9277 61.5367 61.5894 64.875 57.4714 64.875H8.38404C4.26603 64.875 0.927734 61.5367 0.927734 57.4187V8.33131C0.927734 4.2133 4.26604 0.875 8.38404 0.875ZM48.6607 34.429H17.0833V54.9339H48.6607V34.429Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}

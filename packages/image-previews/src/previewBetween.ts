@@ -1,0 +1,15 @@
+import { biggestPreview } from './biggestPreview';
+import type { Preview } from './imagePreview.types';
+import { previewsBetween } from './previewsBetween';
+
+export function previewBetween(
+  previews: Preview[] | null = [],
+  minWidth: number,
+  minHeight: number,
+  maxWidth: number,
+  maxHeight: number,
+) {
+  return biggestPreview(
+    previewsBetween(previews, minWidth, minHeight, maxWidth, maxHeight),
+  );
+}

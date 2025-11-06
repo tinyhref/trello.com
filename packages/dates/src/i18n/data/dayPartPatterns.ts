@@ -1,0 +1,61 @@
+/**
+ * For locales that support 12 hour time format, this is a collection of regex patterns for identifying if a time string is explicitly am
+ */
+export const amPatterns: Record<string, RegExp> = {
+  cs: /dop/i,
+  de: /v/i,
+  'en-AU': /a/i,
+  'en-GB': /a/i,
+  'en-US': /a/i,
+  es: /a/i,
+  fi: /ap/i,
+  fr: /a/i,
+  'fr-CA': /a/i,
+  hu: /de/i,
+  it: /a/i,
+  ja: /(a|午前)/i,
+  nb: /a/i,
+  nl: /a/i,
+  pl: /a/i,
+  pt: /a/i,
+  'pt-BR': /a/i,
+  ru: /дп/i,
+  sv: /f/i,
+  th: /ก่อนเที่ยง/i,
+  tr: /ö\.?ö\.?/i,
+  uk: /дп/i,
+  vi: /(a|sa)/i,
+  'zh-Hans': /上午?/i,
+  'zh-Hant': /上午?/i,
+};
+
+/**
+ * For locales that support 12 hour time format, this is a collection of regex patterns for identifying if a time string is pm.
+ */
+export const pmPatterns: Record<string, RegExp> = {
+  cs: /(odp|več)/i,
+  de: /n/i,
+  'en-AU': /p/i,
+  'en-GB': /p/i,
+  'en-US': /p/i,
+  es: /p/i,
+  fi: /ip/i,
+  fr: /p/i,
+  'fr-CA': /p/i,
+  hu: /du/i,
+  it: /p/i,
+  ja: /(p|午後)/i,
+  nb: /p/i,
+  nl: /p/i,
+  pl: /p/i,
+  pt: /p/i,
+  'pt-BR': /p/i,
+  ru: /пп/i,
+  sv: /e/i,
+  th: /หลังเที่ยง/i,
+  tr: /ö\.?s\.?/i,
+  uk: /пп/i,
+  vi: /(p|ch[^i]*)/i,
+  'zh-Hans': /(下午?|晚上?|[中正]午)/i,
+  'zh-Hant': /(下午?|晚上?|[中正]午)/i,
+};
